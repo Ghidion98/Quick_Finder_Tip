@@ -1,0 +1,10 @@
+#myImage {
+   width: 100px;
+   transition: filter 0.3s ease;
+ }
+ .on {
+   filter: brightness(1.5) drop-shadow(0 0 10px yellow);
+ }
+ .off {
+   filter: none;
+ }
