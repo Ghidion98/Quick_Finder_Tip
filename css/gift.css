@@ -39,6 +39,9 @@ h1 {
    font-size: .8em;
  
 }
+#total {
+   margin-bottom: 20px;
+}
 #result {
    display: none;
    font-size: 1em;
@@ -50,4 +53,10 @@ h1 {
 }
 #reset {
    display: none;
+}
+#resetButton {
+   width: 30px;
+   height: 30px;
+   background: #f00;
+   font-size: 1em;
 }

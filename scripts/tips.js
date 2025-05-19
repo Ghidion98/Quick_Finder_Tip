@@ -3,6 +3,7 @@ let amountTip = document.getElementById('tipPercent');
 let amountTotal = document.getElementById('submit');
 let result = document.getElementById('result');
 let tipAm = document.getElementById('tipAm');
+let totalAmount = document.getElementById('total');
 let reset = document.getElementById('reset');
 let resetBtn = document.getElementById('resetButton');
 
@@ -16,7 +17,10 @@ amountTotal.addEventListener('click', function() {
       }
        
         let tipAmount = billValue * (tipPercentValue / 100);
+        let total = billValue + tipAmount;
+        
         tipAm.textContent = tipAmount.toFixed(2);
+        totalAmount.textContent = total.toFixed(2);
 
         // Show the result
 
@@ -31,6 +35,7 @@ amountTotal.addEventListener('click', function() {
        amountTip.value = "";
        
        tipAm.textContent = "0.00";
+       totalAmount.textContent = "0.00";
 
        result.style.display = "none";
        reset.style.display = "none";
