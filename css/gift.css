@@ -60,3 +60,47 @@ h1 {
    background: #f00;
    font-size: 1em;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+   body {
+      font-size: 1.2em;
+   }
+   h1 {
+      font-size: 1.3em;
+      margin: 10px 0;
+   }
+   #container {
+      margin: 0 7%;
+      padding: 10px;
+   }
+   #tip {
+      font-size: .6em;
+   
+   }
+   #tipPercent {
+      font-size: .6em;
+    
+   }
+   #total {
+      margin-bottom: 20px;
+   }
+   #result {
+      display: none;
+      font-size: .8em;
+      color: #fff;
+      margin-top: 20px;
+   }
+   #submit {
+      font-size: .6em;
+   }
+   #reset {
+      display: none;
+   }
+   #resetButton {
+      width: 18px;
+      height: 18px;
+      background: #f00;
+      font-size: .8em;
+   }
+}
